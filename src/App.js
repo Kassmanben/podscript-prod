@@ -188,18 +188,24 @@ class App extends Component {
       <div className={this.state.showContactBool && (this.state.showMenuBool || this.state.windowWidth > 1000)?"contact":"hidden"}>
       <div>
         <h3>Contact Me</h3>
-          <div>Contact Me about providing transcripts for your podcast: <a href="mailto:podscriptfyi@gmail.com">podscriptfyi@gmail.com</a></div>
+          <p>All contact requests should be sent to <b><a href="mailto:podscriptfyi@gmail.com">podscriptfyi@gmail.com</a></b>. Here are some subject line tags to help me get back to you faster!</p>
+          <ul>
+            <li>Want me to help provide transcripts for your podcast? Put "Podcast Transcript" somwhere in the subject line.</li>
+            <li>Have any feedback about the website? Include "Website Feedback" in the subject line</li>
+            <li>Want to provide some art for the logo/favicon? Plonk "Art Time" down in the subject line </li>
+          </ul>
+          
       </div>
       </div>
 
       <div className={this.state.showSupportBool && (this.state.showMenuBool || this.state.windowWidth > 1000)?"Support":"hidden"}>
       <div>
         <h3>Support Me</h3>
-          <div>There are costs associated with this, from hosting the website to per-minute-transcription costs (roughly 3 cents per minute of audio transcribed, it adds up quickly). I'd like to continue providing this service for free! In terms of transcription, an average hour-long podcast will cost roughly $1.24 to transcribe. Just a little bit a month would really help me to cover these costs and continue to expand to more podcasts in the future! <h3><a href="https://www.patreon.com/podscript">My Patreon Page</a></h3></div>
+          <div>There are costs associated with this, from hosting the website to per-minute-transcription costs (roughly 3 cents per minute of audio transcribed, it adds up quickly). I'd like to continue providing this service for free! In terms of transcription, an average hour-long podcast will cost roughly $1.24 to transcribe. Just a little bit a month would really help me to cover these costs and continue to expand to more podcasts in the future! <h4><a href="https://www.patreon.com/podscript">My Patreon Page</a></h4></div>
       </div>
       </div>
         <h1 className="logo text-center">Podscript</h1>
-        <h2 className="logo-subtitle">Transcripts for all your favorite podcasts</h2>
+        <h2 className="logo-subtitle">Crowdsourcing transcripts for all your favorite podcasts</h2>
       <div className="row" id="sticky">
         <input type="text" className="form-control form-control-lg" id="search" placeholder="Search" value={this.state.title} onChange={this.handleChange}/>
         <div className="filters"> 

@@ -97,7 +97,7 @@ class Episode extends Component {
                     <div className="modal-body">
                     <form action="https://formspree.io/podscriptfyi@gmail.com" method="POST">
                         <div className="form-group">
-                            <input type="hidden" name="_subject" id="_subject" value="You have a new message from a client!"/>
+                            <input type="hidden" name="_subject" id="_subject" value={"Someone wants to work on episode "+EpisodeNumber}/>
                             <input type="text" name="_gotcha" className="hidden" />
                             <div className="col">
                             <label  className="col-sm-2 description">Name: </label>
@@ -111,7 +111,7 @@ class Episode extends Component {
                             <div className="col">
                             <label  className="col-sm-5 description">Reason for Contact: </label>
                             <textarea name="message" placeholder="Message" className="form-control" id="reason"rows="5"
-                            value = {"I'd like to sign up to help transcribe: Episode "+ {EpisodeNumber}+" of MBMBaM"}>
+                            defaultValue = {"I'd like to sign up to help transcribe: Episode "+ EpisodeNumber+" of MBMBaM!"}>
                                         </textarea><br></br>
                             </div>
 

@@ -19,8 +19,8 @@ a span {
     padding: 0;
 }
 
-h5{
-    margin: 20px 0 ;
+h4, h5{
+    margin: 20px 0 10px ;
 }
 
 .menu {
